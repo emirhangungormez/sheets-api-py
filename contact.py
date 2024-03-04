@@ -9,8 +9,8 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 SERVICE_ACCOUNT_FILE = 'keys.json'
 creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 service = build('sheets', 'v4', credentials=creds)
-SPREADSHEET_ID = '1xggLZ9HVwbqdixq_vQHMflZQDkBEXgZXeVtYWnyhCUU'  # Google Sheets ID'sini buraya ekleyin
-SHEET_NAME = 'Form'  # Verilerin yazılacağı sayfanın adını buraya ekleyin
+SPREADSHEET_ID = ''  # Google Sheets ID'si
+SHEET_NAME = 'Form'  # Verilerin yazılacağı sayfa
 
 
 def append_to_sheet(data):
